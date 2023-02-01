@@ -30,6 +30,7 @@ Get started with RabbitMQ, a message broker, that enables multiple processes to 
 1. Run the file. 
 
 You'll need to fix an error in the program to get it to run.
+#Error was that I had to install pika in order for it to work.
 Once it runs and finishes, we can reuse the terminal.
 
 ## Version 1 - Execute the Consumer/Listener
@@ -37,8 +38,10 @@ Once it runs and finishes, we can reuse the terminal.
 1. Read v1_listen_for_messages.py (and the tutorial)
 1. Run the file.
 
-You'll need to fix an error in the program to get it to run.
-Once it runs successfully, will it terminate on its own? How do you know? 
+You'll need to fix an error in the program to get it to run. 
+#The errors were an extra 't' in localhost and switched auto_ack and on_message_callback.
+Once it runs successfully, will it terminate on its own? How do you know?
+#It will not terminate on its own.  The messaging states that CTRL+C needs to be pressed in order to exit.
 As long as the process is running, we cannot use this terminal for other commands. 
 
 ## Version 1 - Open a New Terminal / Emit More Messages
@@ -55,9 +58,11 @@ As long as the process is running, we cannot use this terminal for other command
 1. Did you notice you had to change the message in two places?
     1. You update the actual message sent. 
     1. You also update what is displayed to the user. 
+    Yes, I had to change the message twice for each of my 3 new messages.
 1. Fix this by introducting a variable to hold the message. 
     1. Use your variable when sending. 
     1. Use the variable again when displaying to the user. 
+    I introduced the 'message' variable. 
 
 To send a new message, you'll only make one change.
 Updating and improving code is called 'refactoring'. 
@@ -76,15 +81,15 @@ Each of the version 2 programs include an error as well.
 1. Modify the docstrings on all your files.
 1. Include your name and the date.
 1. Imports always go at the top, just after the file docstring.
-1. Imports should be one per line - why?
+1. Imports should be one per line - why? It will make it more clear
 1. Then, define your functions.
 1. Functions are reuable logic blocks.
 1. Everything the function needs comes in through the arguments.
 1. A function may - or may not - return a value. 
 1. When we open a connection, we should close the connection. 
-1. Which of the 4 files will always close() the connection?
+1. Which of the 4 files will always close() the connection? The emit files
 1. Search GitHub for if __name__ == "__main__":
-1. How many hits did you get? 
+1. How many hits did you get? 40,669,962
 1. Learn and understand this common Python idiom.
 
 ## Reference
@@ -94,4 +99,4 @@ Each of the version 2 programs include an error as well.
 
 ## Multiple Terminals
 
-![Mac Example](screenshot.png)
+![Multiple Terminal Example with Windows](meghaan_screenshot.png)
